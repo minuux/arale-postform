@@ -1,0 +1,27 @@
+{
+  "name": "arale-postform",
+  "version": "1.1.0",
+  "description": "arale-postform",
+  "keywords": [],
+  "homepage": "",
+  "author": "minuux <61769459@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "postform.js",
+    "dependencies": {
+		"jquery":"2.1.1",
+		"arale-base":"1.2.0"
+    },
+    "devDependencies": {
+      "expect.js": "0.3.1"
+    },
+	"buildArgs": "--ignore jquery,arale-base"
+  }
+}
