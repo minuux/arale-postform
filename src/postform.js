@@ -1,7 +1,9 @@
 
    
-
-    Postform = Base.extend({
+var  $ = require("jquery"),
+	Base = require('arale-base');
+	
+    var Postform = Base.extend({
         attrs: {
             form: '#test', //需要判断一下是否为字符串，如果是jquery对象的话就不需要处理了
             action: location.href, //接收POST数据的路径
@@ -60,3 +62,4 @@
         }
     });
 
+module.exports = Postform;
