@@ -1,18 +1,19 @@
-# arale-postform [![spm version](http://spmjs.io/badge/arale-postform)](http://spmjs.io/package/arale-postform)
-
----
-
-arale-postform
+# arale-postform
 
 ## Install
 
-```
-$ spm install arale-postform --save
+```js
+$ npm install arale-postform --save
+
 ```
 
 ## Usage
 
 ```js
-var aralePostform = require('arale-postform');
-// use aralePostform
+var Postform = require('arale-postform');
+new Postform({
+            form: '#form-id'
+        }).after('submit', function(res) {
+           console.log(res);
+        });
 ```

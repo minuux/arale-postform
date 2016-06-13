@@ -1,28 +1,18 @@
 {
-  "name": "arale-postform",
-  "version": "1.1.0",
-  "description": "arale-postform",
-  "keywords": [],
-  "homepage": "",
-  "author": "minuux <61769459@qq.com>",
-  "repository": {
-    "type": "git",
-    "url": ""
+  "name": "postform",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bugs": {
-    "url": ""
-  },
-  "licenses": "MIT",
-  "spm": {
-    "main": "postform.js",
-    "dependencies": {
-		"jquery":"2.1.1",
-		"arale-base":"1.2.0"
-    },
-    "devDependencies": {
-      "expect.js": "0.3.1"
-    },
-	"buildArgs": "--ignore jquery",
-	"output":["postform@alice.js","postform@bootstrap.js"]
+  "keywords": [
+    "form"
+  ],
+  "author": "minuux",
+  "license": "ISC",
+  "dependencies": {
+    "arale-base": "^1.2.0",
+    "jquery": "^1.9.1"
   }
 }
