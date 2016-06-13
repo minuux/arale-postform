@@ -17,7 +17,6 @@ var Postform = Base.extend({
         if (this.get('trigger') === null) {
             this.set('trigger', this.get('form') + ' [type=submit]');
         }
-        this.$ = $;
         $(document).on('click', this.get('trigger'), function() {
             self.submit();
         });
