@@ -1,16 +1,16 @@
-# arale-postform
+# Postform
 
 ## Install
 
 ```js
-$ npm install arale-postform --save
+$ npm install postform --save
 
 ```
 
 ## Usage
 
 ```js
-var Postform = require('arale-postform');
+var Postform = require('postform');
 new Postform({
             form: '#form-id'
         }).after('submit', function(res) {
