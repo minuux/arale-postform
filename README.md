@@ -17,7 +17,23 @@ new Postform({
            console.log(res);
         });
 ```
+## chang post data before submit
 
+```
+
+new Postform({
+        form: '#form'
+    }).after('getdata',function(data){
+        data.append='hello';
+    }).after('submit', function (res) {
+        if (res.result === true) {
+            alert('提交成功');
+        } else {
+            this.errors(res);
+        }
+    });
+    
+```
 
 ## extend
  use bootstrap3 show errors
